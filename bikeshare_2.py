@@ -96,9 +96,9 @@ def time_stats(df, month, day):
     Displays statistics on the most frequent times of travel (most common month/day/hour to travel).
 
     Args :
-          (df) - the filtered dataframe
-          (month) - } 
-          (day)  - }} only used for corny message if the dataframe is filtered on month and/or day
+          df - the filtered dataframe
+          (str) month - } 
+          (str) day   - }} only used for corny message if the dataframe is filtered on month and/or day
 
     """
 
@@ -137,7 +137,7 @@ def station_stats(df):
     Displays statistics on the most popular stations and trip.
 
     Args :
-          (df) - the filtered dataframe
+          df - the filtered dataframe
     """
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
@@ -173,7 +173,7 @@ def trip_duration_stats(df):
     Displays statistics on the total and average trip duration.
 
     Args : 
-          (df) - the filtered dataframe
+          df - the filtered dataframe
     """
 
     print('\nCalculating Trip Duration...\n')
@@ -201,7 +201,7 @@ def user_stats(df):
     Displays statistics on bikeshare users.
 
     Args : 
-          (df) - the filtered dataframe
+          df - the filtered dataframe
     """
 
     print('\nCalculating User Stats...\n')
@@ -242,7 +242,7 @@ def raw_data(df):
     give back 5 rows of raw data upon request
 
     Args : 
-          (df) - the filtered dataframe
+          df - the filtered dataframe
     """
     rd_answer = input('Would you like to see some data from the file (yes/no)?\n')
     start_pos = 0
