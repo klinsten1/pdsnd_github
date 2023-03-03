@@ -92,7 +92,15 @@ def load_data(city, month, day):
     
 
 def time_stats(df, month, day):
-    """Displays statistics on the most frequent times of travel."""
+    """
+    Displays statistics on the most frequent times of travel (most common month/day/hour to travel).
+
+    Args :
+          (df) - the filtered dataframe
+          (month) - } 
+          (day)  - }} only used for corny message if the dataframe is filtered on month and/or day
+
+    """
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
@@ -125,7 +133,12 @@ def time_stats(df, month, day):
 
 
 def station_stats(df):
-    """Displays statistics on the most popular stations and trip."""
+    """
+    Displays statistics on the most popular stations and trip.
+
+    Args :
+          (df) - the filtered dataframe
+    """
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
@@ -156,7 +169,12 @@ def station_stats(df):
 
 
 def trip_duration_stats(df):
-    """Displays statistics on the total and average trip duration."""
+    """
+    Displays statistics on the total and average trip duration.
+
+    Args : 
+          (df) - the filtered dataframe
+    """
 
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
@@ -179,7 +197,12 @@ def trip_duration_stats(df):
 
 
 def user_stats(df):
-    """Displays statistics on bikeshare users."""
+    """
+    Displays statistics on bikeshare users.
+
+    Args : 
+          (df) - the filtered dataframe
+    """
 
     print('\nCalculating User Stats...\n')
     start_time = time.time()
@@ -215,7 +238,12 @@ def user_stats(df):
     print('-'*40)
 
 def raw_data(df):
-    """give back 5 rows of raw data upon request"""
+    """
+    give back 5 rows of raw data upon request
+
+    Args : 
+          (df) - the filtered dataframe
+    """
     rd_answer = input('Would you like to see some data from the file (yes/no)?\n')
     start_pos = 0
     while True:
