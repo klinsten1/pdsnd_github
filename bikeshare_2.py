@@ -259,7 +259,15 @@ def raw_data(df):
 def main():
     while True:
         city, month, day = get_filters()
-        print('Seems like you want to know more about {} in this month : {} and this day : {}'.format(city, month, day))
+        if month.isdigit():
+            mthname = cal.month_name[int(month)]
+        else:
+            mthname = 'ALL'
+        if day.isdigit():
+            dayname = cal.day_name[int(day)]
+        else:
+            dayname = 'ALL'
+        print('Seems like you want to know more about {} in this month : {} and this day : {}'.format(city, mthname, dayname))
         
         df = load_data(city, month, day)
         time_stats(df,month, day)
